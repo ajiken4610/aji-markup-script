@@ -1,3 +1,4 @@
+## 文法
 AMSは階層構造となっている。
 階層構造の仕様は以下のようになっている。
 
@@ -13,8 +14,12 @@ AMSは階層構造となっている。
 - Invokerは、最大で1つのWordを含む。
 
 ### Paragraph  
-Paragraphは、`{}`でくくって定義する。    
-Paragraphに対して呼び出しが行われると、配列のeachのようにParagraphのそれぞれの要素に対して破壊的に呼び出しが行われる。  
+Paragraphは、`{}`でくくって定義する。  
+Paragraphに対して呼び出しが行われると、
+if `;`で終わっている
+    配列のeachのようにParagraphのそれぞれの要素に対して呼び出され，結果の値が入ったParagraphを返す。
+else
+    最後の値が返る
 `{}`内で`;`を用いてSentenceを分ける。
 
 ### Sentence
