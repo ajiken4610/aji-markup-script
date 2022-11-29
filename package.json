@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@prettier/plugin-pug": "^2.3.0",
+    "@volar/vue-language-plugin-pug": "^1.0.9",
+    "lex-bnf": "github:ajiken4610/lex-bnf",
+    "nuxt": "3.0.0",
+    "prettier": "^2.8.0",
+    "pug": "^3.0.2",
+    "sass": "^1.56.1"
+  }
+}
